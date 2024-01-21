@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#230029"
+    tools:context=".MainActivity3">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity3">
+
+        <!-- Header LinearLayout -->
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:alpha="1"
+            android:background="@drawable/rectangle1"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Header Content (if any) goes here -->
+
+        </LinearLayout>
+
+        <!-- Logo CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="40dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextM2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo1" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Title TextView (Centered in linearLayout2) -->
+        <TextView
+            android:id="@+id/titleTextM2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:elevation="10dp"
+            android:fontFamily="@font/yatra_one"
+            android:outlineAmbientShadowColor="@color/white"
+            android:shadowColor="@color/white"
+            android:text="Ideation Hub"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="@color/white"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Sign-Up CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextM2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/titleTextM3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/yatra_one"
+                    android:textColorHighlight="@color/white"
+                    android:shadowColor="@color/white"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:text="Log In to your account"
+                    android:textColor="#40014A"
+                    android:textSize="30sp" />
+
+                <!-- Name TextInputLayout -->
+
+                <!-- ID TextInputLayout -->
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/idIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/box"
+                    android:hint="Username"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#727272"
+                    android:textSize="16sp" />
+
+                <!-- Email TextInputLayout -->
+
+                <!-- Password TextInputLayout -->
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/passwordIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/box"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#727272"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#561161"
+                    android:text="log In"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Already have an account? Text -->
+        <TextView
+            android:id="@+id/inToUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:text="Already have an account? Login"
+            android:textColor="#CDCDCD"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

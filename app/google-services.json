@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "250809348570",
+    "project_id": "ideation-hub",
+    "storage_bucket": "ideation-hub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250809348570:android:4504269fc1d97bd39c10e3",
+        "android_client_info": {
+          "package_name": "com.example.ideationhub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkoLmoadjrjPXtmAduxfRftWFgkH4Byd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
